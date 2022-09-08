@@ -14,20 +14,20 @@ public class Bootstrap {
     /**
      * 公众号AppID
      */
-    public static final String APP_ID = "";
+    public static final String APP_ID = "wxc990720a5fd8b47c";
 
     /**
      * 公众号秘钥
      */
-    public static final String SECRET = "";
+    public static final String SECRET = "ee9f50992b358744cc3a680d4256cd36";
 
     /**
      * 全局模板ID  也可针对单个Friend指定模板
      */
-    public static final String TEMPLATE_ID = "";
+    public static final String TEMPLATE_ID = "78X5h1cXzdfTuZW0GdKZixPB8NWKHKlBxLiolAcVwNM";
 
     /**
-     * 初始化
+     * 初始化/
      */
     public static void init() {
         if (StrUtil.hasEmpty(APP_ID, SECRET, TEMPLATE_ID)) {
