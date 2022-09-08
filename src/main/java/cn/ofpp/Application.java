@@ -29,8 +29,13 @@ public class Application {
 
         // new 一个 女友
         GirlFriend girlFriend = new GirlFriend("翁媛媛",
-                "湖北省", "天门市", "2001-08-28", "2020-03-14", "oY0hF6JHruL2m3LfAkDEK6QDtXsM");
+                "湖北省", "天门市", "2001-08-28", "2020-03-14",
+                "oY0hF6JHruL2m3LfAkDEK6QDtXsM", "lBg8tocUdqyQi30UJ4Yq3Fp7tpD4hc56oRulaoHOAs8");
         Wx.sendTemplateMessage(MessageFactory.resolveMessage(girlFriend));
+
+//        GirlFriend girlFriend2 = new GirlFriend("徐子傲",
+//                "四川", "成都", "2001-08-28", "2020-03-14", "oY0hF6OUWrRQivpZL60pua9zysfc");
+//        Wx.sendTemplateMessage(MessageFactory.resolveMessage(girlFriend2));
 
         // new 一个 男友 也可单独针对一个friend设置模板ID 以达到不同人不同消息
         // BoyFriend boyFriend = new BoyFriend("某男友",

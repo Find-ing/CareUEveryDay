@@ -1,13 +1,7 @@
-### 更新记录:  
-0829: 修复动态古诗词  
-0826: 临时移除一言随机古诗的动态获取，有超时问题等待换接口  
+***基于大神<a href='https://github.com/DokiYoloo/CareUEveryDay'>DokiYoloo</a>二次开发***
 
-  
-  
-
-最近在抖音上的看到挺多人发的
-然后就自己随便做了一个玩了一下
-
+以下是大神的readme
+****
 本项目不需要服务器
 基于Github Actions实现每天固定运行一次 需注意GithubActions使用的UTC时间 转换为北京时间需要-8小时处理
 
@@ -23,8 +17,6 @@
 
 由于 博客服务器托管在GitPage节点在国外且前段时间cdn到期了 可能会访问比较慢～
 
-![效果展示](https://static.marketup.cn/marketup/company/151/2022/822/cu/2809847835962369/20220822233123039-kesngm1h01iu.jpeg)
- 
  
 #### 公众号模板内容 可以根据自己的需要变更内容
 ```text

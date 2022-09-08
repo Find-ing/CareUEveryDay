@@ -17,7 +17,8 @@ public class MessageFactory {
 
     public static WxMpTemplateMessage resolveMessage(Friend friend) {
         return WxMpTemplateMessage.builder()
-                .url("https://ofpp.cn") // 点击后的跳转链接 可自行修改 也可以不填
+                // 点击后的跳转链接 可自行修改 也可以不填
+                .url("https://blog.xuziao.cn")
                 .toUser(friend.getUserId())
                 .templateId(StrUtil.emptyToDefault(friend.getTemplateId(), Bootstrap.TEMPLATE_ID))
                 .data(buildData(friend))
@@ -25,25 +26,25 @@ public class MessageFactory {
     }
 
     /**
-     *
+     *在这里自定义二次开发
      * {@code {{xxxx.DATA}}} xxxx就是一个变量名，消息中设置变量 然后传递时传递变量即可
      * <br/>
-     * 色彩取值可以从这里挑选 https://arco.design/palette/list
+     * 色彩取值可以从这里挑选 <a href="https://arco.design/palette/list">点击此处</a>
      *
      *  <p>
-     *      你叫{{friendName.DATA}}
-     *      今年{{howOld.DATA}}
-     *      距离下一次生日{{nextBirthday.DATA}}天
-     *      具体我们的下一次纪念日{{nextMemorialDay.DATA}}天
-     *      现在在{{province.DATA}}{{city.DATA}}
-     *      当前天气{{weather.DATA}}
-     *      当前气温{{temperature.DATA}}
-     *      风力描述{{winddirection.DATA}}
-     *      风力级别{{windpower.DATA}}
-     *      空气湿度{{humidity.DATA}}
-     *      {{author.DATA}}
-     *      {{origin.DATA}}
-     *      {{content.DATA}}
+     *      你叫{{friendName.DATA}}<br />
+     *      今年{{howOld.DATA}}<br/>
+     *      距离下一次生日{{nextBirthday.DATA}}天<br/>
+     *      具体我们的下一次纪念日{{nextMemorialDay.DATA}}天<br/>
+     *      现在在{{province.DATA}}{{city.DATA}}<br/>
+     *      当前天气{{weather.DATA}}<br/>
+     *      当前气温{{temperature.DATA}}<br/>
+     *      风力描述{{winddirection.DATA}}<br/>
+     *      风力级别{{windpower.DATA}}<br/>
+     *      空气湿度{{humidity.DATA}}<br/>
+     *      {{author.DATA}}<br/>
+     *      {{origin.DATA}}<br/>
+     *      {{content.DATA}}<br/>
      *  </p>
      */
     private static List<WxMpTemplateData> buildData(Friend friend) {
