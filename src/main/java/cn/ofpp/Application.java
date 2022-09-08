@@ -7,7 +7,6 @@ import cn.ofpp.core.Wx;
 
 /**
  * 启动类
- *
  * 这个理论上只能用测试号 正式的号 个人认证是不支持模板消息的 企业认证的又必须使用微信模板库里的模板 只有测试的可以自定义模板内容
  * <a href="https://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index">申请公众号测试应用地址</a>
  *
@@ -28,14 +27,15 @@ public class Application {
         // -----------------  以下为演示数据  ------------------------
 
         // new 一个 女友
-        GirlFriend girlFriend = new GirlFriend("翁媛媛",
-                "湖北省", "天门市", "2001-08-28", "2020-03-14",
-                "oY0hF6JHruL2m3LfAkDEK6QDtXsM", "S1aZOKXYGMNmfV1CjQNVtHk7Oxx4fEYg0gBKDjP1jHY");
-        Wx.sendTemplateMessage(MessageFactory.resolveMessage(girlFriend));
+//        GirlFriend girlFriend = new GirlFriend("翁媛媛",
+//                "湖北省", "天门市", "2001-08-28", "2020-03-14",
+//                "oY0hF6DSk6LmLAxXVpowtF2QDNgo", "S1aZOKXYGMNmfV1CjQNVtHk7Oxx4fEYg0gBKDjP1jHY");
+//        Wx.sendTemplateMessage(MessageFactory.resolveMessage(girlFriend));
 
-//        GirlFriend girlFriend2 = new GirlFriend("徐子傲",
-//                "四川", "成都", "2001-08-28", "2020-03-14", "oY0hF6OUWrRQivpZL60pua9zysfc");
-//        Wx.sendTemplateMessage(MessageFactory.resolveMessage(girlFriend2));
+        GirlFriend girlFriend2 = new GirlFriend("徐子傲",
+                "四川", "成都", "2001-08-28", "2020-03-14",
+                "oY0hF6JHruL2m3LfAkDEK6QDtXsM", "S1aZOKXYGMNmfV1CjQNVtHk7Oxx4fEYg0gBKDjP1jHY");
+        Wx.sendTemplateMessage(MessageFactory.resolveMessage(girlFriend2));
 
         // new 一个 男友 也可单独针对一个friend设置模板ID 以达到不同人不同消息
         // BoyFriend boyFriend = new BoyFriend("某男友",
