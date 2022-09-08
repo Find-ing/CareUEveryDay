@@ -30,7 +30,7 @@ public class Application {
         // new 一个 女友
         GirlFriend girlFriend = new GirlFriend("翁媛媛",
                 "湖北省", "天门市", "2001-08-28", "2020-03-14",
-                "oY0hF6JHruL2m3LfAkDEK6QDtXsM", "lBg8tocUdqyQi30UJ4Yq3Fp7tpD4hc56oRulaoHOAs8");
+                "oY0hF6JHruL2m3LfAkDEK6QDtXsM", "S1aZOKXYGMNmfV1CjQNVtHk7Oxx4fEYg0gBKDjP1jHY");
         Wx.sendTemplateMessage(MessageFactory.resolveMessage(girlFriend));
 
 //        GirlFriend girlFriend2 = new GirlFriend("徐子傲",

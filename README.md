@@ -20,16 +20,17 @@
  
 #### 公众号模板内容 可以根据自己的需要变更内容
 ```text
-你叫{{friendName.DATA}}
-今年{{howOld.DATA}}
-距离下一次生日{{nextBirthday.DATA}}天
-具体我们的下一次纪念日{{nextMemorialDay.DATA}}天
-现在在{{province.DATA}}{{city.DATA}}
-当前天气{{weather.DATA}}
-当前气温{{temperature.DATA}}
-风力描述{{winddirection.DATA}}
-风力级别{{windpower.DATA}}
-空气湿度{{windpower.DATA}}
+你叫：{{friendName.DATA}}
+今年：{{howOld.DATA}}
+距离下一次生日：{{nextBirthday.DATA}}天
+具体我们的下一次纪念日：{{nextMemorialDay.DATA}}天
+现在在：{{province.DATA}}{{city.DATA}}
+当前天气：{{weather.DATA}}
+当前气温：{{temperature.DATA}}
+风力描述：{{winddirection.DATA}}
+风力级别：{{windpower.DATA}}
+空气湿度：{{windpower.DATA}}
+
 {{author.DATA}}
 {{origin.DATA}}
 {{content.DATA}}
